@@ -69,3 +69,84 @@
 </html>  
 
 ````
+
+````
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>测试DIV+CSS</title>
+    <style type="text/css">
+        .left_size {
+            display: inline-block;
+            background-color: bisque;
+            width: 130px;
+            margin: 0 auto;
+        }
+        
+        .center {
+            display: inline-block;
+        }
+        
+        .right_side {
+            display: inline-block;
+            background-color: floralwhite;
+            width: 130px;
+            margin: 0 auto;
+        }
+        
+        a {
+            width: 70px;
+            display: block;
+            overflow: hidden;
+            /*注意不要写在最后了*/
+            white-space: nowrap;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 300px;background-color:white;margin: 0 auto;">
+        <div style="width: 300px;background-color: azure; text-align: center;margin-top: 1px;">
+            <div class="left_size">
+                <a>测试横排左侧</a>
+            </div>
+            <div class="center">
+                |
+            </div>
+            <div class="right_side">
+                <a>测试横排右侧</a>
+            </div>
+        </div>
+
+        <div style="width: 300px;background-color:honeydew;text-align: center;margin-top: 1px;">
+            <div class="left_size">
+                <a>横排左侧</a>
+            </div>
+            <div class="center">
+                |
+            </div>
+            <div class="right_side">
+                <a>
+                    横排右侧
+                </a>
+            </div>
+        </div>
+        <div style="width: 300px;background-color:honeydew;text-align: center;margin-top: 1px;">
+            <div class="left_size">
+                <a>横排左侧</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+````
+
